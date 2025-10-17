@@ -16,8 +16,10 @@ jobs:
               with:
                 java-version: '21'
                 distribution: 'temurin'
-            - name: Build imagem Docker
-              run: docker build -t delivery-tech-t4:latest .
+                
+            
+          ##- name: Build imagem Docker
+          ##  run: docker build -t delivery-tech-t4:latest .
 
             - name: Build with Maven
               run: mvn clean package install -DskipTests=true
